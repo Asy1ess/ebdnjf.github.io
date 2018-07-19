@@ -6,7 +6,8 @@
   </head>
   <body>
     <h1><a href="HTML.html">start page</a></h1>
-      <h1>색상을 선택하시오</h1>
+      <h1>동물을 선택하세요</h1>
+      <img src="wolf.jpg" alt="wolf" width="250" title="wolf">
     <p>
       <form action="index.html">
         <select name="color">
@@ -24,16 +25,20 @@
             <p>
               <label for="password_txt">password</label>:
               <input id="password_txt" type="password" name="pwd" value="password">
-            </p>
           <input type="submit" name="login" value="로그인">
+          </p>
           <p>
         90 : <input type="checkbox" name="size" value="90">
         95 : <input type="checkbox" name="size" value="95">
         100 : <input type="checkbox" name="size" value="100">
         <input type="submit" name="" value="선택">
       </p>
-
     </form>
 
+    <h5>파일 전송</h5>
+    <form  action="HTML.html" method="post" enctype="multipart/form-data">
+      <input type="file" name="file" value="file">
+            <input type="submit" name="파일 전송" value="전송">
+          </form>
   </body>
 </html>

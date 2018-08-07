@@ -1,15 +1,43 @@
 <!DOCTYPE html>
 <html>
         <head>
-          <meta charset="utf-8">
-          <title>start page</title>
-        </head>
-          <body>
-            <style media="screen">
+            <meta charset="utf-8">
+            <title>start page</title>
+              <style media="screen">
+                a:visited{
+                  color:blue;
+                }
+                a:hover{
+                  color:black;
+                }
+                a:link{
+                  color:powderblue;
+                }
+                #nametable{
+                  border: 0.5px;
 
-            </style>
+                }
+                  #main{
+                    text-decoration: underline;
+                  }
+                  ol li{
+                    border:0.5px soled black;
+                    background-color: powderblue;
+                  }
+                  #table1 {
+                    border:0.5px ;
+                  }
+                  #table2{
+                    border: 0.5px;
+                  }
+                  h1{
+                    text-align: center
+                  }
+                </style>
+            </head>
+            <body>
                     <h1><a href="HTML.html">start page</a></h1>
-                    <table border="0">
+                    <table id = nametable border =1 style="margin-left: auto; margin-right: auto;">
                       <tr>
                         <th>이름</th> <td>서보성</td>
                       </tr>
@@ -18,29 +46,36 @@
                       </tr>
                     </table>
               <hr>
-                    <h3>내 프로필</h3>
+                    <h3 style="color:blue">내 프로필</h3>
                     <img src="winter-landscape.jpg" alt="winter-landscape" width="250" title="winter-landscape">
-
+                    <ul style="color:powderblue">
                       <li><strong>my name</strong></li>
                                     <ul style ="color:black">
                                       <li>서보성</li>
                                     </ul>
                       <li><strong>my homepage</strong></li>
-                      <ol>
-                        <li><a href="1.html">make web homepage</a></li>
-                        <li><a href="https://github.com/ebdnjf/ebdnjf.github.io"target="_blank">Github</a></li>
-                      </ol>
+                        <table id = table1 border="1">
+                          <tr>
+                            <th id = num >1. </th>
+                            <td id = main ><a href="1.html">make web homepage</a></td>
+                          </tr>
+                          <tr>
+                            <th id= num >2. </th>
+                            <td id= main ><a href="https://github.com/ebdnjf/ebdnjf.github.io" target="_blank">Github</a></td>
+                            </tr>
+                        </table>
                       <li><strong>my E-mail</strong></li>
                     <br>
-                      <table border="1 ">
+                      <table id = table2 border="1" style="color:black">
                         <tr>
-                          <th>네이버</th> <th>구글</th>
+                          <th id = num >네이버</th> <th id = num >구글</th>
                         </tr>
                         <tr>
-                          <td>ebdnjf7265@naver.com</td> <td>01023796885a@gmail.com</td>
+                          <td id = main >ebdnjf7265@naver.com</td> <td id = main>01023796885a@gmail.com</td>
                         </tr>
                       </table>
                       <br>
+                    </ul>
                       <img src="hot chocolate.jpg" alt="hot chocolate" width="250" title="hot chocolate">
                     <hr>
           </body>
